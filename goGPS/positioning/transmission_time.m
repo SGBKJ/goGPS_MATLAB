@@ -48,7 +48,7 @@ else
     dtsbas = zeros(1,length(sat));
 end
 
-time_tx_RAW = time_rx - (range - err_tropo - err_iono) / goGNSS.V_LIGHT + dtR;
+time_tx_RAW = time_rx - (range/goGNSS.V_LIGHT);
 
 % tcorr0 = 0;
 % tcorr = sat_clock_error_correction(time_tx_RAW, Eph);
