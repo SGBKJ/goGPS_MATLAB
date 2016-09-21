@@ -1,4 +1,4 @@
-function [Az, El, D] = topocent(Xr, Xs)
+function [Az_E, El_E, D_E] = topocent(Xr, Xs_E)
 
 % SYNTAX:
 %   [Az, El, D] = topocent(Xr, Xs);
