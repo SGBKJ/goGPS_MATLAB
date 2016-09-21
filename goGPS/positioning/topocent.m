@@ -1,16 +1,16 @@
-function [Az, El, D] = topocent(Xr, Xs)
+function [azimuth_E, el_E, D_E] = topocent(Xr_row, Xs_E)
 
 % SYNTAX:
-%   [Az, El, D] = topocent(Xr, Xs);
+%   [Az_E, El_E, D_E] = topocent(Xr_row, Xs_E);
 %
 % INPUT:
-%   Xr = receiver coordinates (X,Y,Z)
-%   Xs = satellite coordinates (X,Y,Z)
+%   Xr_row = receiver coordinates (X,Y,Z)
+%   Xs_E   = satellite coordinates (X,Y,Z)
 %
 % OUTPUT:
-%   D = rover-satellite distance
-%   Az = satellite azimuth
-%   El = satellite elevation
+%   D_E       = rover-satellite distance
+%   azimuth_E = satellite azimuth
+%   el_E      = satellite elevation
 %
 % DESCRIPTION:
 %   Computation of satellite distance, azimuth and elevation with respect to
